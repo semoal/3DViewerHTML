@@ -1,0 +1,14 @@
+html{
+    height: 100%;
+}
+body {
+    font-family: sans-serif, Arial, Verdana, "Trebuchet MS";
+    background-color: white;
+    margin: 0px;
+    overflow: hidden;
+    min-height: 100%;
+}
+
+#viewer {
+  background-color:red;
+}

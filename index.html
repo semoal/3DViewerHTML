@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Three.js OBJ viewer</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=yes, minimum-scale=1.0, maximum-scale=1.0">
+    <LINK rel="stylesheet" href="meshviewer.css" type="text/css">
+</head>
+
+<body>
+<div id="mainViewer">
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/jquery-ui/jquery-ui.min.js"></script>
+    <script src="lib/threejs/three.min.js"></script>
+
+    <script src="lib/threejs/loaders/BinaryLoader.js"></script>
+    <script src="lib/threejs/loaders/MTLLoader.js"></script>
+    <script src="lib/threejs/loaders/OBJMTLLoader.js"></script>
+
+    <script src="lib/threejs/loaders/UTF8Loader.js"></script>
+
+    <script src="lib/threejs/loaders/ctm/lzma.js"></script>
+    <script src="lib/threejs/loaders/ctm/CTMLoader.js"></script>
+
+    <script src="lib/threejs/Detector.js"></script>
+    <script src="lib/threejs/TrackballControls.js"></script>
+    <script src="lib/threejs/libs/stats.min.js"></script>
+
+    <script id="objectView" src="meshviewer.js"></script>
+    <script type="text/javascript">
+        meshviewer({
+            'meshFile' : 'characters/char2/Creature.obj',
+            'mtlFile' : 'characters/char2/Creature.mtl',
+            'container':'#viewer', 
+            'format':'obj'});
+    </script>
+    <div id="viewer"></div>
+</body>
+</html>
